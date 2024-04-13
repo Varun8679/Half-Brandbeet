@@ -1,0 +1,176 @@
+@font-face{
+  font-family: Fontone;
+  src: url(Assets/font.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Fontone;
+  font-weight: 400;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 15vh;
+  /* background-color:aqua ; */
+  padding: 0 3vw;
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+.lft-nav {
+  font-size: 1.5vw;
+  height: 6vh;
+  /* background-color: red; */
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.lft-nav h1{
+  color: #fff;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+.lft-nav:hover #logo{
+  margin-top: -5.5vh;
+}
+
+.rght-nav{
+  font-size: 0.8vw;
+  height: 3vh;
+  /* background-color: red; */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.rght-nav h2{
+  color: #fff;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.9s;
+}
+
+.rght-nav:hover #nav-contact{
+  margin-top: -3.2vh;
+}
+
+.part-1{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+.content-part-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  /* background-color: blueviolet; */
+}
+
+.rotate-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200%;
+  gap: 3vw;
+  height: 200vh;
+  background-color: #000;
+}
+
+.row-div{
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  width: calc(200vw/5);
+  height: 100%;
+  /* background-color: aliceblue; */
+}
+
+#img-div{
+  width: 100%;
+  height: calc(100%/4);
+  /* background-color: aqua; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#img-div img{
+  width: 100%;
+}
+
+#row-div-2{
+  margin-top: 13%;
+}
+#row-div-3{
+  margin-top: 10%;
+}
+#row-div-4{
+  margin-top: 8%;
+}
+#row-div-5{
+  margin-top: 5%;
+}
+
+.overlay-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000000;
+  font-size: 5vw;
+}
+
+.overlay-div h1{
+  opacity: 0;
+}
+
+.scroll-down{
+  position: absolute;
+  bottom: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  color: #fff;
+}
+
+.scroll-down h3{
+  font-size:0.7vw;
+}
+
+.scroll-p{
+  width: 5vw;
+  height: 2px;
+  border-radius: 50px;
+  background-color: #ffffff55;
+}
+
+.scrolling {
+  width: 0vw;
+  height: 2px;
+  border-radius: 50px;
+  background-color: #fff;
+}
